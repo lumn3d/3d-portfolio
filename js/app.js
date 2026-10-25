@@ -10,7 +10,7 @@
   const setText = (s, value) => { $(s).textContent = value || ''; };
   setText('#brand-alias', profile.nickname || profile.name); setText('#brand-name', profile.name); setText('#footer-name', profile.name); setText('#intro', profile.intro); setText('#bio', profile.bio);
   setText('#year', new Date().getFullYear()); document.title = `${profile.nickname ? profile.nickname + ' — ' : ''}${profile.name || 'Your Name'} — 3D Artist`;
-  const portrait = image(profile.image, profile.imageAlt); portrait.id = 'profile-image'; $('#profile-image').replaceWith(portrait);
+  const portrait = image(profile.image, profile.imageAlt); portrait.id = 'profile-image'; portrait.width = profile.imageWidth || 1000; portrait.height = profile.imageHeight || 1333; portrait.style.aspectRatio = portrait.width + ' / ' + portrait.height; $('#profile-image').replaceWith(portrait);
   for (const [key, selector] of [['skills', '#skills'], ['software', '#software']]) (profile[key] || []).forEach(v => $(selector).append(text('li', v)));
   for (const key of ['education', 'experience']) if (profile[key]) $('#background').append(text('h3', key.toUpperCase()), text('p', profile[key]));
   if (profile.email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(profile.email)) { const a = text('a', profile.email + ' ↗', 'email-link'); a.href = 'mailto:' + profile.email; $('#email').append(a); }
@@ -23,7 +23,7 @@
   function renderGallery() {
     $('#gallery').replaceChildren(); const visible = projects.filter(p => active === 'All work' || (p.category || 'Other Projects') === active);
     visible.forEach(p => {
-      const a = document.createElement('a'); a.className = 'card'; a.dataset.category = p.category; a.href = '#project/' + encodeURIComponent(p.id); const wrap = text('div', '', 'card-image'); wrap.append(image(p.thumbnail, p.title)); if (p.placeholder) wrap.append(text('span', 'SAMPLE STUDY', 'card-badge')); const arrow = text('span', p.videos?.length ? '▷' : '↗', 'card-arrow'); arrow.setAttribute('aria-hidden', 'true'); wrap.append(arrow); const title = text('div', '', 'card-title'); const label = document.createElement('div'); label.append(text('h3', p.title), text('small', p.category || 'Other Projects')); title.append(label, text('span', String(projects.indexOf(p) + 1).padStart(2, '0'), 'card-number')); a.append(wrap, title); $('#gallery').append(a); });
+      const a = document.createElement('a'); a.className = 'card'; a.dataset.category = p.category; a.href = '#project/' + encodeURIComponent(p.id); const wrap = text('div', '', 'card-image'); const preview = image(p.thumbnail, p.title); preview.width = p.previewWidth; preview.height = p.previewHeight; preview.style.aspectRatio = p.previewWidth + " / " + p.previewHeight; wrap.append(preview); if (p.placeholder) wrap.append(text('span', 'SAMPLE STUDY', 'card-badge')); const arrow = text('span', p.videos?.length ? '▷' : '↗', 'card-arrow'); arrow.setAttribute('aria-hidden', 'true'); wrap.append(arrow); const title = text('div', '', 'card-title'); const label = document.createElement('div'); label.append(text('h3', p.title), text('small', p.category || 'Other Projects')); title.append(label, text('span', String(projects.indexOf(p) + 1).padStart(2, '0'), 'card-number')); a.append(wrap, title); $('#gallery').append(a); });
     if (!visible.length) $('#gallery').append(text('p', 'New work is on its way.', 'empty'));
     setText('#results', `${visible.length} projects shown`);
     $('#filters').querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.category === active)));
