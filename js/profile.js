@@ -8,7 +8,7 @@ window.PROFILE = {
   image: 'assets/profile/PortfolioPic.png',
   imageAlt: 'Profile portrait of Jann Railey De Chavez (LUMN)',
   skills: ['3D Modelling', 'Sculpting', 'Texturing', 'Lighting', 'Compositing', 'Animation'],
-  software: ['Blender', 'Substance 3D Painter', 'Gaea', 'Photoshop'],
+  software: ['Blender', 'Substance 3D Painter', 'Gaea', 'Photoshop', 'Unity', 'DaVinci Resolve', 'Adobe Premiere Pro'],
   education: '', // e.g. 'BSEMC · FAITH Colleges · Expected graduation 2027'
   experience: '', // Optional; hidden when empty.
   email: 'jannrailey852@gmail.com',
