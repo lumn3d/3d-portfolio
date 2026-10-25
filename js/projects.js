@@ -1,10 +1,10 @@
-/* Original image proportions reserve space before loading. */
+/* One project per subject folder. Original assets remain available in the detail viewer. */
 window.PROJECTS = [
   {
     "id": "ruins-environment",
     "title": "Ruins Environment",
     "category": "Environments",
-    "thumbnail": "assets/images/previews/ruins-environment-natural.webp",
+    "thumbnail": "assets/images/environment/Environment_Ruins.png",
     "images": [
       {
         "src": "assets/images/environment/Environment_Ruins.png",
@@ -17,9 +17,7 @@ window.PROJECTS = [
     "software": [
       "Blender",
       "Arborea"
-    ],
-    "previewWidth": 1600,
-    "previewHeight": 670
+    ]
   },
   {
     "id": "echo",
@@ -51,9 +49,7 @@ window.PROJECTS = [
     "description": "Echo is the main character in “The Empty Frame,” our upcoming animated film by Impastory Studios and Marionette Motion. I created the 3D model and rig.",
     "credits": "Concept design by Elaghast. Texturing by Prinz. 3D modelling and rigging by Jann Railey De Chavez (LUMN).",
     "type": "The Empty Frame · Animated film",
-    "placeholder": false,
-    "previewWidth": 787,
-    "previewHeight": 1400
+    "placeholder": false
   },
   {
     "id": "nerissa",
@@ -77,9 +73,7 @@ window.PROJECTS = [
     "description": "Nerissa is Echo’s mother in “The Empty Frame,” our upcoming animated film by Impastory Studios and Marionette Motion. I created the 3D model and rig.",
     "credits": "Texturing by Prinz. 3D modelling and rigging by Jann Railey De Chavez (LUMN).",
     "type": "The Empty Frame · Animated film",
-    "placeholder": false,
-    "previewWidth": 787,
-    "previewHeight": 1400
+    "placeholder": false
   },
   {
     "id": "prof-milana",
@@ -107,9 +101,7 @@ window.PROJECTS = [
     "description": "Prof. Milana is Echo’s teacher in “The Empty Frame,” our upcoming animated film by Impastory Studios and Marionette Motion. I created the 3D model and rig.",
     "credits": "Texturing by Prinz. 3D modelling and rigging by Jann Railey De Chavez (LUMN).",
     "type": "The Empty Frame · Animated film",
-    "placeholder": false,
-    "previewWidth": 787,
-    "previewHeight": 1400
+    "placeholder": false
   },
   {
     "id": "analyn",
@@ -156,9 +148,7 @@ window.PROJECTS = [
     "software": [
       "Blender",
       "Substance 3D Painter"
-    ],
-    "previewWidth": 1200,
-    "previewHeight": 675
+    ]
   },
   {
     "id": "rai",
@@ -197,9 +187,7 @@ window.PROJECTS = [
     "software": [
       "Blender",
       "Substance 3D Painter"
-    ],
-    "previewWidth": 1200,
-    "previewHeight": 675
+    ]
   },
   {
     "id": "kael-drakthorne",
@@ -232,9 +220,7 @@ window.PROJECTS = [
     "description": "A character sculpt created in Blender, where I also completed the retopology.",
     "software": [
       "Blender"
-    ],
-    "previewWidth": 1200,
-    "previewHeight": 675
+    ]
   },
   {
     "id": "dodge-challenger",
@@ -259,9 +245,7 @@ window.PROJECTS = [
     "description": "Modelled entirely in Blender, with procedural materials and textures created in Blender.",
     "software": [
       "Blender"
-    ],
-    "previewWidth": 1200,
-    "previewHeight": 675
+    ]
   },
   {
     "id": "lamborghini-aventador",
@@ -282,9 +266,7 @@ window.PROJECTS = [
     "description": "Modelled entirely in Blender, with procedural materials and textures created in Blender.",
     "software": [
       "Blender"
-    ],
-    "previewWidth": 1200,
-    "previewHeight": 675
+    ]
   },
   {
     "id": "stylized-car",
@@ -310,9 +292,7 @@ window.PROJECTS = [
     "software": [
       "Blender",
       "Substance 3D Painter"
-    ],
-    "previewWidth": 1200,
-    "previewHeight": 675
+    ]
   },
   {
     "id": "stylized-horse-cart",
@@ -362,9 +342,7 @@ window.PROJECTS = [
     "software": [
       "Blender",
       "Substance 3D Painter"
-    ],
-    "previewWidth": 1200,
-    "previewHeight": 675
+    ]
   },
   {
     "id": "2d-artwork-11",
@@ -382,9 +360,7 @@ window.PROJECTS = [
     "credits": "Illustration by Jann Railey De Chavez (LUMN). The original reference sources can no longer be located, so their creators are currently unidentified.",
     "software": [
       "Adobe Photoshop"
-    ],
-    "previewWidth": 900,
-    "previewHeight": 1200
+    ]
   },
   {
     "id": "2d-artwork-15",
@@ -402,9 +378,7 @@ window.PROJECTS = [
     "credits": "Illustration by Jann Railey De Chavez (LUMN). The original reference sources can no longer be located, so their creators are currently unidentified.",
     "software": [
       "Adobe Photoshop"
-    ],
-    "previewWidth": 900,
-    "previewHeight": 1200
+    ]
   },
   {
     "id": "2d-artwork-24",
@@ -422,9 +396,7 @@ window.PROJECTS = [
     "credits": "Illustration by Jann Railey De Chavez (LUMN). The original reference sources can no longer be located, so their creators are currently unidentified.",
     "software": [
       "Adobe Photoshop"
-    ],
-    "previewWidth": 900,
-    "previewHeight": 1200
+    ]
   },
   {
     "id": "empty-frame-animation",
@@ -448,9 +420,7 @@ window.PROJECTS = [
     "description": "A continuous sequence of Scenes 14, 16 and 17 from The Empty Frame. Select Play to watch all three clips consecutively.",
     "credits": "Animation Director, 3D Animator, Character Modeller and Rigger: Jann Railey De Chavez (LUMN). Animated film by Impastory Studios & Marionette Motion.",
     "type": "The Empty Frame · Animated film",
-    "placeholder": false,
-    "previewWidth": 787,
-    "previewHeight": 1400
+    "placeholder": false
   },
   {
     "id": "puppet-strings-film",
@@ -466,9 +436,7 @@ window.PROJECTS = [
     "description": "An animated film by Marionette Motion. Watch the full film and explore the contributions behind its production.",
     "credits": "Producer, Film Editor, sole Rigger, sole Character Artist, 3D Modeller, Environment Artist, Lighting Artist and 3D Animator: Jann Railey De Chavez (LUMN).",
     "type": "Puppet Strings · Animated film",
-    "placeholder": false,
-    "previewWidth": 1200,
-    "previewHeight": 675
+    "placeholder": false
   },
   {
     "id": "aircraft-cinematic",
@@ -484,9 +452,7 @@ window.PROJECTS = [
       }
     ],
     "placeholder": false,
-    "description": "An aircraft cinematic presented as a video.",
-    "previewWidth": 960,
-    "previewHeight": 408
+    "description": "An aircraft cinematic presented as a video."
   },
   {
     "id": "cave-ruins",
@@ -502,9 +468,7 @@ window.PROJECTS = [
       }
     ],
     "placeholder": false,
-    "description": "A video presentation of my Cave Ruins environment.",
-    "previewWidth": 960,
-    "previewHeight": 540
+    "description": "A video presentation of my Cave Ruins environment."
   },
   {
     "id": "dragon-berylth",
@@ -546,15 +510,13 @@ window.PROJECTS = [
     "software": [
       "Blender"
     ],
-    "placeholder": false,
-    "previewWidth": 1920,
-    "previewHeight": 1080
+    "placeholder": false
   },
   {
     "id": "lucy-fan-art",
     "title": "Lucy — Fan Art",
     "category": "Sculpt",
-    "thumbnail": "assets/images/previews/lucy-fan-art-natural.webp",
+    "thumbnail": "assets/images/sculpt/Lucy Fanart/Front.png",
     "images": [
       {
         "src": "assets/images/sculpt/Lucy Fanart/Front.png",
@@ -581,8 +543,7 @@ window.PROJECTS = [
     "software": [
       "Blender"
     ],
-    "placeholder": false,
-    "previewWidth": 900,
-    "previewHeight": 1600
+    "placeholder": false
   }
 ];
+
