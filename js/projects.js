@@ -1,5 +1,19 @@
 /* One project per subject folder. Original assets remain available in the detail viewer. */
 window.PROJECTS = [
+{
+  "id": "video-1",
+  "title": "Video 1",
+  "category": "Animation",
+  "thumbnail": "assets/images/previews/video-1.svg",
+  "embeds": [
+    {
+      "url": "https://drive.google.com/file/d/1AdUd6S5oMth0zz4394hdGtywLFc_uLoX/preview",
+      "title": "Video 1"
+    }
+  ],
+  "type": "Individual artwork",
+  "placeholder": false
+},
   {
     "id": "ruins-environment",
     "title": "Ruins Environment",
