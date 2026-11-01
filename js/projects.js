@@ -414,24 +414,16 @@ window.PROJECTS = [
   },
   {
     "id": "empty-frame-animation",
-    "title": "The Empty Frame — Animation Sequence",
+    "title": "The Empty Frame — Selected Animation Shots",
     "category": "Animation",
     "thumbnail": "assets/images/previews/echo.webp",
-    "playlist": [
+    "embeds": [
       {
-        "src": "assets/videos/anim_scene14.mp4",
-        "label": "Scene 14"
-      },
-      {
-        "src": "assets/videos/anim_scene16.mp4",
-        "label": "Scene 16"
-      },
-      {
-        "src": "assets/videos/anim_scene17_v01.mp4",
-        "label": "Scene 17"
+        "url": "https://drive.google.com/file/d/1nIItE4RquuesXiMyj2fyrbIjO2WH4HPw/preview",
+        "title": "Selected animation shots from Scenes 14, 16 and 17 — The Empty Frame"
       }
     ],
-    "description": "A continuous sequence of Scenes 14, 16 and 17 from The Empty Frame. Select Play to watch all three clips consecutively.",
+    "description": "A curated collection of sample animation shots from Scenes 14, 16 and 17 of The Empty Frame, highlighting my animation work on the upcoming film. These are selected excerpts rather than the complete scenes or the final film.",
     "credits": "Animation Director, 3D Animator, Character Modeller and Rigger: Jann Railey De Chavez (LUMN). Animated film by Impastory Studios & Marionette Motion.",
     "type": "The Empty Frame · Animated film",
     "placeholder": false
