@@ -31,17 +31,8 @@
 .film-project-link{display:inline-block;border-bottom:1px solid var(--accent);font-size:13px;padding:5px 0;margin-top:auto}
 .film-cast--duo{grid-template-columns:repeat(2,minmax(0,1fr))}
 .film-cast--duo img{height:clamp(320px,32vw,500px)}
-.sequence-player{height:100%;width:100%;display:flex;flex-direction:column;min-height:0}
-.sequence-player video{flex:1;min-height:0;max-height:100%;width:100%;object-fit:contain}
-.sequence-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 15px;background:#202720;font-size:12px;color:var(--ink);flex-wrap:wrap}
-.sequence-replay{border:1px solid var(--line);background:transparent;color:var(--accent);padding:7px 11px;font-size:12px}
-.sequence-replay:hover,.sequence-replay:focus-visible{border-color:var(--accent)}
-.film-media .sequence-player video{height:calc(100% - 48px);flex:1;aspect-ratio:auto}
-.project-playlist{grid-column:1/-1}
-.project-sequence{aspect-ratio:16/9;background:#0c100e}
-.project-sequence .sequence-player video{height:calc(100% - 48px);aspect-ratio:auto}
 @media(max-width:900px){.film-feature{grid-template-columns:1fr}.film-feature-copy{gap:15px}.film-feature-copy .film-project-link{margin-top:0}}
-@media(max-width:650px){.hero-copy .intro{text-align:left;align-self:flex-start;margin:0}.film-section .section-heading{grid-template-columns:1fr}.film-section .section-heading>p{text-align:left;max-width:100%;margin-left:0}.film-cast--duo{grid-template-columns:1fr 1fr}.film-cast--duo a:first-child{grid-column:auto}.film-cast--duo a:first-child img,.film-cast--duo img{height:clamp(220px,55vw,330px)}.film-media{aspect-ratio:auto;min-height:210px}.film-embed{aspect-ratio:16/9;min-height:0}.film-embed iframe{aspect-ratio:16/9}.film-media .sequence-player{min-height:230px}.film-feature-copy{padding:24px}.project-sequence{aspect-ratio:auto;min-height:240px}.sequence-controls{font-size:11px}}
+@media(max-width:650px){.hero-copy .intro{text-align:left;align-self:flex-start;margin:0}.film-section .section-heading{grid-template-columns:1fr}.film-section .section-heading>p{text-align:left;max-width:100%;margin-left:0}.film-cast--duo{grid-template-columns:1fr 1fr}.film-cast--duo a:first-child{grid-column:auto}.film-cast--duo a:first-child img,.film-cast--duo img{height:clamp(220px,55vw,330px)}.film-media{aspect-ratio:auto;min-height:210px}.film-embed{aspect-ratio:16/9;min-height:0}.film-embed iframe{aspect-ratio:16/9}.film-feature-copy{padding:24px}}
 
 /* Soft portrait dissolve: overlay is tied to the exact image bounds, not the caption. */
 .portrait{background:transparent}
